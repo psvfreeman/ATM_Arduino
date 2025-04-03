@@ -7,20 +7,16 @@
 #define S2 9
 #define S3 10
 #define sensorOut 5
-#include <LiquidCrystal_I2C.h> //Дисплей
+#include <LiquidCrystal_I2C.h>
 #include <EEPROM.h>
-LiquidCrystal_I2C lcd(0x27,20,4); //Параметры дисплея
-//unsigned long Tick;
+LiquidCrystal_I2C lcd(0x27,20,4);
 uint32_t Timer_1, Timer_2, Timer_3, Timer_4, Timer_5;
-Encoder enc1(CLK, DT, SW);  // для работы c кнопкой
+Encoder enc1(CLK, DT, SW);
 int freg = 0;
 int frequency = 0;
 int fregpic = 0;
 int fregvno = 0;
 int SELCT = 1;
-// int GREEN[] = {175, 189, 194};
-// int RED[] = {123, 57, 81};
-// int BLUE[] = {210, 225, 240};
 int taraskvas[] = {189, 190, 185};
 int skovoroda[] = {220, 220, 218};
 int kupur = 0;
